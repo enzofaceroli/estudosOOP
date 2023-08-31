@@ -5,6 +5,15 @@ public class Funcionario
     private float salarioBruto; 
     private float totalAcrescimos;
     private float totalDescontos; 
+
+    public Funcionario() {}
+    
+    public Funcionario(String nome, float salarioBruto, float totalAcrescimos, float totalDescontos){
+        this.setNome(nome);
+        this.setSalarioBruto(salarioBruto);
+        this.setTotalAcrescimos(totalAcrescimos);
+        this.setTotalDescontos(totalDescontos);
+    }
     
     public void setNome(String nome){
         this.nome = nome;
